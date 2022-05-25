@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <title>basic exercise bootstrap day 2</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-success" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-success"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#html">HTML</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-success dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CSS and JS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#css">CSS</a></li>
+                <li><a class="dropdown-item" href="#js">JavaScript</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#bootstrap">Bootstrap</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <p class="h1">My First 5 Weeks at CodeFactory</p>
+
+      <p>
+        I've finished my five weeks at CodeFactory. Here are some of the things
+        I've learned so far:
+      </p>
+
+      <p class="h2">Git and <small class="text-muted"> GitHub</small></p>
+
+      <ul>
+        <li class="text-success">What is VC, Necessity, What is Git?</li>
+
+        <li class="text-muted">Installation & Config via Command Line</li>
+
+        <li class="text-danger">Commits, Best Practices, Standards</li>
+
+        <li class="text-light bg-dark">Get GitHub Repository</li>
+
+        <li class="text-dark">Merging multiple Git branches back together.</li>
+
+        <li class="text-primary">
+          Cloning a project from GitHub to my local machine.
+        </li>
+
+        <li class="text-warning">Publishing a website on GitHub pages.</li>
+      </ul>
+
+      <p id="html" class="h2">HTML</p>
+
+      <ul>
+        <li class="bg-dark text-light">Using HTML tags to create websites.</li>
+
+        <li class="bg-success">Indenting and organize HTML correctly.</li>
+
+        <li class="bg-danger">Incorporating block elements.</li>
+
+        <li class="bg-primary">Including inline elements.</li>
+
+        <li class="bg-warning">Using both spans and divs.</li>
+
+        <li class="bg-info">Adding classes and IDs to style HTML with CSS.</li>
+      </ul>
+
+      <p id="css" class="h3">CSS</p>
+
+      <ul>
+        <li class="shadow-lg rounded">Creating a stylesheet.</li>
+
+        <li class="m-3">Using CSS selectors to specify an HTML element.</li>
+
+        <li class="p-2">
+          Writing CSS rules to style particular elements in my HTML.
+        </li>
+
+        <li class="mt-2 pr-3">
+          Floating elements to create columns, sidebars, and other alignments.
+        </li>
+
+        <li class="py-4">Padding, margins, and the box model.</li>
+
+        <li class="ms-2">How CSS cascades to apply styles.</li>
+
+        <li class="pb-4">The importance of responsive design.</li>
+
+        <li class="px-3 me-2">
+          How to use media queries to dynamically change the appearance of a
+          site based on the user's viewport.
+        </li>
+      </ul>
+
+      <p id="js" class="h4">JavaScript</p>
+
+      <ul>
+        <li class="border-top">JavaScript vs CSS3</li>
+
+        <li class="border-bottom">What is programming</li>
+
+        <li class="border border-success">
+          What is JavaScript how is used & rendered
+        </li>
+
+        <li class="border border-danger">What JS can do?</li>
+
+        <li class="border border-start">Variables & Data Types</li>
+
+        <li class="border border-warning">
+          Browser Input & Output (e.g. prompt)
+        </li>
+
+        <li class="border rounded">Statements & comments</li>
+
+        <li class="border rounded-pill">Conditions</li>
+
+        <li class="border border-success rounded-left">Loops</li>
+
+        <li class="border rounded-sm">Array & Sorting Algorithms, Chaining</li>
+
+        <li class="border rounded-lg">Functions, Returning & Parameters</li>
+
+        <li class="border border-danger rounded-circle">Error handle</li>
+
+        <li class="border border-top-0">Debugging (Debugger console log)</li>
+      </ul>
+
+      <p id="bootstrap" class="h2">Bootstrap</p>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+            href="#"
+            >Introduction to the Bootstrap</a
+          >
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+            href="#"
+            >Classes</a
+          >
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+            href="#"
+            >Bootstrap CDN</a
+          >
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="disabled-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#disabled-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="disabled-tab-pane"
+            aria-selected="false"
+            href="#"
+            >Downloading Bootstrap</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <p class="h5">SCSS</p>
+
+          <ul>
+            <li class="text-justify">Intro</li>
+
+            <li class="text-end">Variables</li>
+
+            <li class="text-center">Mixins</li>
+
+            <li class="text-md-end">Partials</li>
+
+            <li class="text-sm-center">Operators</li>
+
+            <li class="text-lg-end">Extend</li>
+
+            <li class="text-uppercase">Nesting</li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <p class="h5">Bootstrap classes</p>
+
+          <ul>
+            <li class="text-justify">
+              <p>
+                Bootstrap’s components are largely built with a base-modifier
+                nomenclature. We group as many shared properties as possible
+                into a base class, like .btn, and then group individual styles
+                for each variant into modifier classes, like .btn-primary or
+                .btn-success.
+              </p>
+            </li>
+
+            <li class="text-judtify">
+              <p>
+                To build our modifier classes, we use Sass’s @each loops to
+                iterate over a Sass map. This is especially helpful for
+                generating variants of a component by our $theme-colors and
+                creating responsive variants for each breakpoint. As you
+                customize these Sass maps and recompile, you’ll automatically
+                see your changes reflected in these loops.
+              </p>
+            </li>
+
+            <!--
+            <li class="text-center"></li>
+
+            <li class="text-md-end">Partials</li>
+
+            <li class="text-sm-center">Operators</li>
+
+            <li class="text-lg-end">Extend</li>
+
+            <li class="text-uppercase">Nesting</li>
+            -->
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          <p class="h5">CDN links</p>
+
+          <ul>
+            <li class="text-justify">CSS</li>
+
+            <li class="text-center">
+              https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+            </li>
+            <!--
+            <li class="text-center"></li>
+-->
+            <li class="text-justify">JavaScript</li>
+
+            <li class="text-center">
+              https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js
+            </li>
+            <!--
+            <li class="text-lg-end"></li>
+
+            <li class="text-uppercase"></li>
+-->
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="disabled-tab-pane"
+          role="tabpanel"
+          aria-labelledby="disabled-tab"
+          tabindex="0"
+        >
+          <p class="h5">SASS</p>
+
+          <ul>
+            <li class="text-justify">Intro</li>
+
+            <li class="text-end">Variables</li>
+
+            <li class="text-center">Mixins</li>
+
+            <li class="text-md-end">Partials</li>
+
+            <li class="text-sm-center">Operators</li>
+
+            <li class="text-lg-end">Extend</li>
+
+            <li class="text-uppercase">Nesting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+
+    <!-- Bootstrap Bundle -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

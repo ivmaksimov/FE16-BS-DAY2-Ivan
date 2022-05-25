@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>advanced exercise bootstrap day 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <style>
+      .plot {
+        background-image: url(./white-walker-5739181.jpg);
+        background-size: cover;
+        background-position: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-warning">
+      <ul class="nav justify-content-center">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active text-danger fw-bold"
+            id="pills-plot-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-plot"
+            type="button"
+            role="tab"
+            aria-controls="pills-plot"
+            aria-selected="true"
+            aria-current="page"
+            >PLot</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link text-danger fw-bold"
+            id="pills-actors-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-actors"
+            type="button"
+            role="tab"
+            aria-controls="pills-actors"
+            aria-selected="false"
+            >Actors</a
+          >
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link text-danger fw-bold"
+            id="pills-reviews-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-reviews"
+            type="button"
+            role="tab"
+            aria-controls="pills-reviews"
+            aria-selected="false"
+            >Reviews</a
+          >
+        </li>
+      </ul>
+
+      <!--
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        -->
+    </nav>
+    <div
+      class="tab-content d-flex justify-content-end plot"
+      id="pills-tabContent"
+    >
+      <div
+        class="tab-pane fade show active"
+        id="pills-plot"
+        role="tabpanel"
+        aria-labelledby="pills-plot-tab"
+        tabindex="0"
+      >
+        <div class="container text-white">
+          <h1>Game of Thrones (film series)</h1>
+
+          <p>
+            Game of Thrones is an American fantasy drama television series
+            created by David Benioff and D. B. Weiss for HBO. It is an
+            adaptation of A Song of Ice and Fire, a series of fantasy novels by
+            George R. R. Martin, the first of which is A Game of Thrones. The
+            show was shot in the United Kingdom, Canada, Croatia, Iceland,
+            Malta, Morocco, and Spain. It premiered on HBO in the United States
+            on April 17, 2011, and concluded on May 19, 2019, with 73 episodes
+            broadcast over eight seasons.
+          </p>
+
+          <p>
+            Set on the fictional continents of Westeros and Essos, Game of
+            Thrones has a large ensemble cast and follows several story arcs
+            throughout the course of the show. The first major arc concerns the
+            Iron Throne of the Seven Kingdoms of Westeros through a web of
+            political conflicts among the noble families either vying to claim
+            the throne or fighting for independence from whoever sits on it. A
+            second focuses on the last descendant of the realm's deposed ruling
+            dynasty, who has been exiled to Essos and is plotting to return and
+            reclaim the throne. The third follows the Night's Watch, a military
+            order defending the realm against threats from beyond Westeros's
+            northern border.
+          </p>
+
+          <p>
+            Game of Thrones attracted a record viewership on HBO and has a
+            broad, active, and international fan base. Critics have praised the
+            series for its acting, complex characters, story, scope, and
+            production values, although its frequent use of nudity and violence
+            (including sexual violence) has been subject to criticism. The final
+            season received significant critical backlash for its reduced length
+            and creative decisions, with many considering it a disappointing
+            conclusion. The series received 59 Primetime Emmy Awards, the most
+            by a drama series, including Outstanding Drama Series in 2015, 2016,
+            2018 and 2019. Its other awards and nominations include three Hugo
+            Awards for Best Dramatic Presentation, a Peabody Award, and five
+            nominations for the Golden Globe Award for Best Television Series –
+            Drama. Many critics and publications have named the show as one of
+            the best television series of all time.
+          </p>
+
+          <p>
+            Game of Thrones is roughly based on the storylines of the A Song of
+            Ice and Fire book series by George R. R. Martin, set in the
+            fictional Seven Kingdoms of Westeros and the continent of
+            Essos.[5][6] The series follows several simultaneous plot lines.[7]
+            The first story arc follows a war of succession among competing
+            claimants for control of the Iron Throne of the Seven Kingdoms, with
+            other noble families fighting for independence from the throne. The
+            second concerns the exiled scion's actions to reclaim the throne;
+            the third chronicles the threat of the impending winter, as well as
+            the legendary creatures and fierce peoples of the North
+          </p>
+        </div>
+      </div>
+      <div
+        style="min-height: 50em; width: 50%"
+        class="tab-pane fade"
+        id="pills-actors"
+        role="tabpanel"
+        aria-labelledby="pills-actors-tab"
+        tabindex="0"
+      >
+        <div
+          style="min-height: 50em"
+          class="d-flex justify-content-around align-items-center"
+        >
+          <div
+            class="nav flex-column nav-pills me-3"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active text-white"
+              id="v-pills-actor-1-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-actor-1"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-actor-1"
+              aria-selected="true"
+            >
+              Daenerys Targaryen
+            </button>
+            <button
+              class="nav-link text-white"
+              id="v-pills-actor-2-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-actor-2"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-actor-2"
+              aria-selected="false"
+            >
+              Jon Snow
+            </button>
+            <button
+              class="nav-link text-white"
+              id="v-pills-actor-3-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-actor-3"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-actor-3"
+              aria-selected="false"
+            >
+              Sansa Stark
+            </button>
+            <button
+              class="nav-link text-white"
+              id="v-pills-actor-4-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-actor-4"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-actor-4"
+              aria-selected="false"
+            >
+              Arya Stark
+            </button>
+            <button
+              class="nav-link text-white"
+              id="v-pills-actor-5-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-actor-5"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-actor-5"
+              aria-selected="false"
+            >
+              Ser Jaime Lannister
+            </button>
+            <button
+              class="nav-link text-white"
+              id="v-pills-actor-6-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-actor-6"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-actor-6"
+              aria-selected="false"
+            >
+              Cersei Lannister
+            </button>
+            <button
+              class="nav-link text-white"
+              id="v-pills-actor-7-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-actor-7"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-actor-7"
+              aria-selected="false"
+            >
+              Tyrion Lannister
+            </button>
+          </div>
+          <div class="tab-content text-white" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active text-white"
+              id="v-pills-actor-1"
+              role="tabpanel"
+              aria-labelledby="v-pills-actor-1-tab"
+              tabindex="0"
+            >
+              <h3>Emilia Clarke</h3>
+              <img
+                width="400px"
+                height="600px"
+                src="./Emilia_Clarke.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-actor-2"
+              role="tabpanel"
+              aria-labelledby="v-pills-actor-2-tab"
+              tabindex="0"
+            >
+              <h3>Kit Harington</h3>
+              <img
+                width="600px"
+                height="800px"
+                src="./Kit_harrington.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-actor-3"
+              role="tabpanel"
+              aria-labelledby="v-pills-actor-3-tab"
+              tabindex="0"
+            >
+              <h3>Sophie Turner</h3>
+              <img
+                width="600px"
+                height="800px"
+                src="./Sophie_Turner.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-actor-4"
+              role="tabpanel"
+              aria-labelledby="v-pills-actor-4-tab"
+              tabindex="0"
+            >
+              <h3>Maisie Williams</h3>
+              <img
+                width="600px"
+                height="800px"
+                src="./417px-Maisie_Williams.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-actor-5"
+              role="tabpanel"
+              aria-labelledby="v-pills-actor-5-tab"
+              tabindex="0"
+            >
+              <h3>Nikolaj Coster-Waldau</h3>
+              <img
+                width="600px"
+                height="800px"
+                src="./413px-Nikolaj_Coster.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-actor-6"
+              role="tabpanel"
+              aria-labelledby="v-pills-actor-6-tab"
+              tabindex="0"
+            >
+              <h3>Lena Headey</h3>
+              <img
+                width="600px"
+                height="800px"
+                src="./Lena_Headey.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-actor-7"
+              role="tabpanel"
+              aria-labelledby="v-pills-actor-7-tab"
+              tabindex="0"
+            >
+              <h3>Peter Dinklage</h3>
+              <img
+                width="600px"
+                height="800px"
+                src="./Peter_Dinklage.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade text-white"
+        style="min-height: 50em; width: 50%"
+        id="pills-reviews"
+        role="tabpanel"
+        aria-labelledby="pills-reviews-tab"
+        tabindex="0"
+      >
+        <h1 class="border-bottom">REVIEWS</h1>
+        <h3>SaifOVGU <span>9 April 2020</span></h3>
+        <p class="border-bottom">
+          I'm feeling so heartbroken to see everyone criticising my favourite
+          show of all time. And yes of course that's because of the bad making
+          of the season finale, I can totally understand that. After all these
+          years hardwork, creating and developing each and every character from
+          bottom to top, memories, emotions throughout the process all went to
+          vain for one bad making. It's so painful to accept it for the audience
+          who invested lots of time watching the show from the starting and then
+          finishing it like this! It's a long long journey. I don't even
+          remember the day I started watching it and since then I waited the
+          next year to come for the new season. I can't say anything more. Only
+          one last request, could you please delete the whole season 8 and make
+          a new version of it? Please?
+        </p>
+        <h3>samxxx-671 <span>25 May 2019</span></h3>
+        <p class="border-bottom">
+          It was a master piece. It was written to the perfection. It was
+          mesmerizing. It was gripping. It was so shocking that if someone is
+          binge watching this show he/she will need a time-off in between to get
+          their head around things and accept some messed up, yet mind blowing
+          development. But yet, I cant hate it enough after final season. Its
+          like you came to know that you were in love with the wrong one all
+          along. It was like looking at a completely different person. It was
+          like seeing your own dreams and expectations get destroyed. It was not
+          a let down, it was a BETRAYAL!
+        </p>
+        <h3>TheLittleSongbird <span>9 November 2017</span></h3>
+        <p class="border-bottom">
+          Was over-time on a gradual binge of watching 'Game of Thrones' from
+          the first episode (gradual because of being so busy), having heard
+          nothing but amazing things about it from friends, family and IMDb
+          reviewers. Plus with such a great cast of talent and a brilliant book
+          series, how could it possibly go wrong? The good news is that 'Game of
+          Thrones' didn't go wrong. Quite the opposite. Not only is it a rare
+          television show that does its original source material justice and
+          treats it with respect but it is on its own merits one of the finest,
+          most addictive and consistently compelling shows in recent years.
+        </p>
+        <h3>. . .</h3>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
